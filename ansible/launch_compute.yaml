@@ -1,0 +1,20 @@
+- name: launch a compute instance
+  hosts: localhost
+  tasks:
+  - name: launch an instance
+    os_server:
+      state: present
+      auth:
+        auth_url: https://region-b.geo-1.identity.hpcloudsvc.com:35357/v2.0/
+        username: username
+        password: Equality7-2521
+        project_name: username-project1
+      name: vm1
+      region_name: region-b.geo-1
+      availability_zone: az2
+      image: 9302692b-b787-4b52-a3a6-daebb79cb498
+      key_name: test
+      timeout: 200
+      flavor: 101
+      security_groups: default
+      auto_ip: yes

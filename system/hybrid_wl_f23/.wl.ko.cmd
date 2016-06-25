@@ -1,0 +1,1 @@
+cmd_/home/scoday/Documents/dev/system/hybrid_wl_f23/wl.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/scoday/Documents/dev/system/hybrid_wl_f23/wl.ko /home/scoday/Documents/dev/system/hybrid_wl_f23/wl.o /home/scoday/Documents/dev/system/hybrid_wl_f23/wl.mod.o
